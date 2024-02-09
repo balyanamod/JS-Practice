@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button">click me</button>
+</body>
+<script>
+    //document.addEventListener("DOMContentLoaded", createpara)
+    function createpara(){
+        const para= document.createElement("p");
+        para.textContent="You have click me!";
+        document.body.appendChild(para);
+        
+    }
+    const btn=document.querySelector("button");
+    btn.addEventListener("click", createpara);
+</script>
+</html>

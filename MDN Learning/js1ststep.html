@@ -7,6 +7,13 @@
 </head>
 <body>
     <button type="button">click me</button>
+    <button type="button">click me</button>
+    <button type="button">click me</button>
+    <button type="button">click me</button>
+    <button type="button">click me</button>
+    <button type="button">click me</button>
+    <button type="button">click me</button>
+
 </body>
 <script>
     //document.addEventListener("DOMContentLoaded", createpara)
@@ -16,7 +23,8 @@
         document.body.appendChild(para);
         
     }
-    const btn=document.querySelector("button");
-    btn.addEventListener("click", createpara);
+    const btns=document.querySelectorAll("button");
+    for(const btn of btns){
+    btn.addEventListener("click", createpara);}
 </script>
 </html>
